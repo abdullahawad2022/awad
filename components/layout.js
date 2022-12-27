@@ -12,7 +12,7 @@ export default function Layout({ children }) {
             <div className='absolute flex-row  inset-0 z-20 flex justify-between w-full h-screen gap-2 overflow-hidden pointer-events-none md:gap-8 '>
                 <div className='relative z-10 py-6 pl-4 md:flex-shrink-0'>
                     <div className="md:h-screen h-[50vw]">
-                        <Image src={Logo} alt="" className='object-cover' />
+                        <Image src={Logo} alt="" className='md:h-[90vh] h-[50vh] w-auto' />
                     </div>
                 </div>
                 <div className='relative z-20 py-6 pr-4 md:flex-shrink-0'>
