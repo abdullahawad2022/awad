@@ -21,20 +21,20 @@ export default function Slider() {
   })
 
   return (
-    <div className="bg-slate-600 relative">
+    <div className="relative">
       <div className="">
         <div ref={sliderRef} className="w-screen h-screen overflow-hidden keen-slider h-screen-ios">
-          <Slide number_slide='number-slide1'
-          video_url={"/assets/loop1.mp4"}
-          title="Abdul Samad Al Qurashi"
-          sub_title="Journey of Beauty"
-          title_link="/"
+          <Slide
+            video_url={"/assets/loop1.mp4"}
+            title="Abdul Samad Al Qurashi"
+            sub_title="Journey of Beauty"
+            title_link="/"
           />
-          <Slide number_slide='number-slide2'
-          video_url={"/assets/loop2.mp4"}
-          title="sama damas"
-          sub_title="Be Brilliant"
-          title_link="#"
+          <Slide
+            video_url={"/assets/loop2.mp4"}
+            title="sama damas"
+            sub_title="Be Brilliant"
+            title_link="#"
           />
         </div>
 
@@ -60,9 +60,9 @@ export default function Slider() {
   )
 }
 
-function Slide({number_slide, video_url, title, sub_title, title_link}) {
+function Slide({video_url, title, sub_title, title_link }) {
   return (
-    <div className={`relative keen-slider__slide ${number_slide}`}>
+    <div className={`relative keen-slider__slide `}>
       <video autoPlay loop className="absolute z-10 object-cover w-full h-full">
         <source src={video_url} />
       </video>
@@ -72,8 +72,8 @@ function Slide({number_slide, video_url, title, sub_title, title_link}) {
           {title}
         </h3>
         <Link href={title_link}
-        className="text-[8vw] md:text-[4.44vw] font-bold leading-[1.2] mb-2 md:mb-1 font-formula uppercase tracking-[0.02em] pointer-events-auto">
-        {sub_title}
+          className="text-[8vw] md:text-[4.44vw] font-bold leading-[1.2] mb-2 md:mb-1 font-formula uppercase tracking-[0.02em] pointer-events-auto">
+          {sub_title}
         </Link>
       </div>
     </div>
