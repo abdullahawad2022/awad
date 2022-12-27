@@ -25,43 +25,43 @@ export default function Slider() {
           className="w-screen h-screen overflow-hidden keen-slider h-screen-ios"
         >
           <Slide
-            video_url={'/assets/loop.mp4'}
+            video_url={'/assets/loop_1.mp4'}
             title="Abdul Samad Al Qurashi"
             sub_title="Journey of Beauty"
             title_link="/"
           />
           <Slide
-            video_url={'/assets/loop2.mp4'}
+            video_url={'/assets/loop_2.mp4'}
             title="Arab Games"
             sub_title="I am Arabic"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop3.mp4'}
+            video_url={'/assets/loop_3.mp4'}
             title="sama damas"
             sub_title="Be Brilliant"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop4.mp4'}
+            video_url={'/assets/loop_4.mp4'}
             title="Jeep Cherokee"
             sub_title="Wildly Civilized"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop5.mp4'}
+            video_url={'/assets/loop_5.mp4'}
             title="Zabeel"
             sub_title="Bedouin"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop6.mp4'}
+            video_url={'/assets/loop_6.mp4'}
             title="nissan rogue"
             sub_title="world of distraction"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop7.mp4'}
+            video_url={'/assets/loop_7.mp4'}
             title="NISSAN"
             sub_title="ELECTRIFY EVERY DAY"
             title_link="#"
