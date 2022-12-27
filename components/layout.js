@@ -16,7 +16,7 @@ export default function Layout({ children }) {
                     </svg>
                 </div>
                 <div className='relative z-20 py-6 pr-4 md:flex-shrink-0'>
-                    <Link href="#" className="text-[#F0E6CC]">
+                    <Link href="#" className="text-[#F0E6CC] transform rotate-90 flex w-[1vw]">
                         info@xxxxxx.com
                     </Link>
                 </div>
