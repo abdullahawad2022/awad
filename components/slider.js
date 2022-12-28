@@ -137,7 +137,7 @@ function Slide({ video_url, title, sub_title, title_link }) {
       ref={videoEl}
         autoPlay="autoplay"
         muted
-        preLoad="auto"
+        preload="auto"
         loop
         onLoadedMetadata={handleLoadedMetadata}
         className="absolute z-10 object-cover w-full h-full"
@@ -146,12 +146,12 @@ function Slide({ video_url, title, sub_title, title_link }) {
       </video>
 
       <div className="absolute md:bottom-10 bottom-14 md:right-5 right-auto md:left-auto left-0 grid z-10 px-4 pb-4 text-[#F0E6CC] md:pb-8 md:pr-14 md:pl-0 md:text-right md:self-end">
-        <h3 className="text-[4.26vw] md:text-[1.38vw] leading-[1.2] mb-1 md:mb-2 tracking-[0.02em] font-medium">
+        <h3 className="GroteskMedium text-[4.26vw] md:text-[1.38vw] leading-[1.2] mb-1 md:mb-2 tracking-[0.02em] font-medium">
           {title}
         </h3>
         <Link
           href={title_link}
-          className="text-[8vw] md:text-[4.44vw] font-bold leading-[1.2] mb-2 md:mb-1 uppercase tracking-[0.02em] pointer-events-auto"
+          className="FormulaCondensed text-[8vw] md:text-[4.44vw] font-bold leading-[1.2] mb-2 md:mb-1 uppercase tracking-[0.02em] pointer-events-auto"
         >
           {sub_title}
         </Link>
