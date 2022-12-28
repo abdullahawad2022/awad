@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
-import Image from 'next/image';
-import Link from 'next/link';
+import React, { useEffect, useRef, useState } from "react";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import Image from "next/image";
+import Link from "next/link";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(0);
+  const [loopCount, setloopCount]= useState(1)
+
+  // const [count, setCount] = useState(0);
+  // setInterval(() => setCount((oldCount) => oldCount + 1), 1000);
+
+
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     slideChanged(slider) {
@@ -17,6 +27,24 @@ export default function Slider() {
     },
   });
 
+  const percentage = 66;
+
+  const handleVideo = (id) => {
+    setActiveVideo(id)
+    console.log(id)
+    instanceRef.current?.moveToIdx(id);
+  }
+
+ useEffect(()=>{
+  setTimeout(()=>{
+    setActiveVideo(loopCount)
+    instanceRef.current?.moveToIdx(loopCount);
+    loopCount === 6 ? setloopCount(0) : setloopCount(loopCount+1)
+    console.log(loopCount)
+  }, 7100)
+ },[loopCount])
+
+
   return (
     <div className="relative">
       <div className="">
@@ -25,43 +53,43 @@ export default function Slider() {
           className="w-screen h-screen overflow-hidden keen-slider h-screen-ios"
         >
           <Slide
-            video_url={'/assets/loop_1.mp4'}
+            video_url={"/assets/loop_1.mp4"}
             title="Abdul Samad Al Qurashi"
             sub_title="Journey of Beauty"
             title_link="/"
           />
           <Slide
-            video_url={'/assets/loop_2.mp4'}
+            video_url={"/assets/loop_2.mp4"}
             title="Arab Games"
             sub_title="I am Arabic"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop_3.mp4'}
+            video_url={"/assets/loop_3.mp4"}
             title="sama damas"
             sub_title="Be Brilliant"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop_4.mp4'}
+            video_url={"/assets/loop_4.mp4"}
             title="Jeep Cherokee"
             sub_title="Wildly Civilized"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop_5.mp4'}
+            video_url={"/assets/loop_5.mp4"}
             title="Zabeel"
             sub_title="Bedouin"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop_6.mp4'}
+            video_url={"/assets/loop_6.mp4"}
             title="nissan rogue"
             sub_title="world of distraction"
             title_link="#"
           />
           <Slide
-            video_url={'/assets/loop_7.mp4'}
+            video_url={"/assets/loop_7.mp4"}
             title="NISSAN"
             sub_title="ELECTRIFY EVERY DAY"
             title_link="#"
@@ -69,36 +97,55 @@ export default function Slider() {
         </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className="absolute bottom-10 md:right-5 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
+        <div className="absolute bottom-10 mt-4 md:right-5 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => {
             return (
-              <button
-                key={idx}
+              <div
                 onClick={() => {
-                  instanceRef.current?.moveToIdx(idx);
+                  handleVideo(idx)
                 }}
-                className={'dot' + (currentSlide === idx ? ' active' : '')}
               >
-                {idx}
-              </button>
+                <CircularProgressbar
+                  key={idx}
+                  strokeWidth={activeVideo === idx ? '8' : '0'}
+                  className={
+                    "dot w-7 h-7 cursor-pointer" +
+                    (currentSlide === idx ? " active" : "")
+                  }
+                  value={idx === activeVideo && '100'}
+                  text={`${idx+1}`}
+                />
+              </div>
             );
           })}
         </div>
       )}
+
+    
     </div>
   );
 }
 
 function Slide({ video_url, title, sub_title, title_link }) {
+  const videoEl = useRef(null);
+  var arr = [];
+  const handleLoadedMetadata = () => {
+    const video = videoEl.current;
+    if (!video) return;
+    console.log(`The video is ${video.duration} seconds long.`);
+  };
+
   return (
     <div className={`relative keen-slider__slide `}>
       <video
+      ref={videoEl}
         autoPlay="autoplay"
         muted
         preLoad="auto"
         loop
+        onLoadedMetadata={handleLoadedMetadata}
         className="absolute z-10 object-cover w-full h-full"
       >
         <source src={video_url} />
@@ -117,4 +164,16 @@ function Slide({ video_url, title, sub_title, title_link }) {
       </div>
     </div>
   );
+}
+
+{
+  /* <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx);
+                }}
+                className={"dot" + (currentSlide === idx ? " active" : "")}
+              >
+                {idx}
+              </button> */
 }
