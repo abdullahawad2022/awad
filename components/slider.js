@@ -106,9 +106,9 @@ export default function Slider() {
                 onClick={() => {
                   handleVideo(idx)
                 }}
+                key={idx}
               >
                 <CircularProgressbar
-                  key={idx}
                   strokeWidth={activeVideo === idx ? '8' : '0'}
                   className={
                     "dot w-7 h-7 cursor-pointer" +
