@@ -103,7 +103,7 @@ export default function Slider() {
                 key={idx}
               >
                 <CircularProgressbar
-                  strokeWidth={activeVideo === idx ? '8' : '0'}
+                  strokeWidth={activeVideo === idx ? '10' : '0'}
                   className={
                     "dot w-7 md:h-[1.5rem] h-[1.09em] cursor-pointer" +
                     (currentSlide === idx ? " active" : "")
