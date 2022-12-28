@@ -12,8 +12,8 @@ export default function Layout({ children }) {
                 </div>
             </div>
             <div className="relative">{children}</div>
-            <div className="absolute top-[10px] right-0 overflow-hidden">
-                <div className="pt-20 pb-16 w-auto">
+            <div className="absolute top-[5%] right-0">
+                <div className="md:pt-20 pt-14 pb-16 w-auto">
                     <Link href="#"
                         className="text-[#F0E6CC] GroteskMedium text-[4.26vw] md:text-[1.38vw] leading-[1.2] tracking-[-0.02em] font-medium transform rotate-90 flex "
                     >
