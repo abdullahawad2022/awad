@@ -13,10 +13,6 @@ export default function Slider() {
   const [activeVideo, setActiveVideo] = useState(0);
   const [loopCount, setloopCount]= useState(1)
 
-  // const [count, setCount] = useState(0);
-  // setInterval(() => setCount((oldCount) => oldCount + 1), 1000);
-
-
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     slideChanged(slider) {
@@ -26,8 +22,6 @@ export default function Slider() {
       setLoaded(true);
     },
   });
-
-  const percentage = 66;
 
   const handleVideo = (id) => {
     setActiveVideo(id)
