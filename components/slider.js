@@ -44,7 +44,7 @@ export default function Slider() {
       <div className="">
         <div
           ref={sliderRef}
-          className="w-screen h-screen overflow-hidden keen-slider h-screen-ios"
+          className="w-screen h-screen overflow-hidden keen-slider"
         >
           <Slide
             video_url={"/assets/loop_1.mp4"}
@@ -105,7 +105,7 @@ export default function Slider() {
                 <CircularProgressbar
                   strokeWidth={activeVideo === idx ? '8' : '0'}
                   className={
-                    "dot w-7 h-7 cursor-pointer" +
+                    "dot w-7 md:h-[1.5rem] h-[1.09em] cursor-pointer" +
                     (currentSlide === idx ? " active" : "")
                   }
                   value={idx === activeVideo && '100'}
