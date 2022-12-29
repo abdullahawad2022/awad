@@ -136,7 +136,7 @@ function Slide({ video_url, title, sub_title, title_link }) {
         preload="auto"
         loop
         onLoadedMetadata={handleLoadedMetadata}
-        className="absolute inset-0 z-10 object-cover w-full h-screen"
+        className="absolute z-10 object-cover w-full h-full"
       >
         <source src={video_url} />
       </video>
