@@ -89,7 +89,7 @@ export default function Slider() {
         </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className="absolute bottom-6 mt-4 md:right-2 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
+        <div className="absolute md:bottom-6 bottom-12 mt-4 md:right-2 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => {
