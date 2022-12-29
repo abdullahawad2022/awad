@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Layout({ children }) {
     return (
-        <main className="relative h-fit ">
+        <main className="relative h-screen min-safe-h-screen  ">
             <div className="absolute z-20 flex justify-between w-auto h-screen overflow-hidden">
                 <div className="relative z-10 py-6 pl-4 md:flex-shrink-0">
                     <svg className="md:h-full h-[50vh] w-auto" viewBox="0 0 54 352" fill="none" xmlns="http://www.w3.org/2000/svg">
