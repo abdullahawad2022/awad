@@ -13,7 +13,7 @@ export default function Layout({ children }) {
             </div>
 
             <Link href="mailto:info@abdullahawad.com" target="_blank" rel="nofollow" 
-                className="absolute md:top-[12rem] top-[6rem] md:-right-10 -right-8 left-auto z-20 text-[#F0E6CC] FormulaCondensed md:text-[1.8rem] text-[1rem] transform rotate-90 flex "
+                className="absolute 2xl:top-[11rem]  md:top-[10.2rem] top-[6rem] md:-right-10 -right-8 left-auto z-20 text-[#F0E6CC] FormulaCondensed md:text-[1.8rem] text-[1rem] transform rotate-90 flex "
             >
                info@abdullahawad.com
             </Link>
