@@ -12,10 +12,10 @@ export default function Layout({ children }) {
                 </div>
             </div>
 
-            <Link href="#"
-                className="absolute top-20 md:-right-2 -right-8 left-auto z-20 text-[#F0E6CC] FormulaCondensed md:text-[1.8rem] text-[1.3rem] transform rotate-90 flex "
+            <Link href="mailto:info@abdullahawad.com" target="_blank" rel="nofollow" 
+                className="absolute md:top-[7.5rem] top-[6rem] md:-right-10 -right-8 left-auto z-20 text-[#F0E6CC] FormulaCondensed md:text-[1.8rem] text-[1.3rem] transform rotate-90 flex "
             >
-                info@xxxxxx.com
+               info@abdullahawad.com
             </Link>
             <div className="w-screen h-screen overflow-hidden h-screen-ios">
                 {children}
