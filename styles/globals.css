@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: FormulaCondensed;
+  src: url('../public/fonts/FormulaCondensed-Bold.ttf');
+}
+@font-face {
+  font-family: GroteskMedium;
+  src: url('../public/fonts/GroteskMedium.ttf');
+}
+
+:root {
+  --vh: ;
+}
+
+body {
+  margin: 0;
+}
+
+.h-screen-ios {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.FormulaCondensed {
+  font-family: FormulaCondensed;
+}
+
+.GroteskMedium {
+  font-family: GroteskMedium;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dot text {
+  font-size: 4rem !important;
+  font-weight: bold !important;
+  transform: translateY(5%);
+}
+
+/* .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  
+  .dot {
+    font-size: 12px;
+    color: #F0E6CC;
+    line-height: 0;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot:focus {
+    outline: none;
+  }
+  
+  .dot.active {
+    border-color: #F0E6CC;
+    border: 2px solid;
+  }
+  
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+  }
+   */
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #f0e6cc !important;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #f0e6cc !important;
+  transition: stroke-dashoffset 8s ease !important;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #f0e6cc8c !important;
+}
+.CircularProgressbar{
+  width: 2rem !important;
+}
