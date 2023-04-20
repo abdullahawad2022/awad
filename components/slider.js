@@ -114,7 +114,7 @@ export default function Slider() {
         </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className="absolute md:bottom-6 bottom-12 mt-4 md:right-2 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
+        <div className="absolute md:bottom-6 bottom-16 mt-4 md:right-2 right-auto md:left-auto left-0 flex space-x-1 px-4 pb-4 md:justify-end md:pb-4 md:pr-14 md:pl-0">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => {
@@ -176,7 +176,7 @@ function Slide({ video_url, title, sub_title, title_link, id }) {
         <source src={video_url} />
       </video>
 
-      <div className="absolute md:bottom-6 bottom-14 md:right-2 right-auto md:left-auto left-0 grid z-10 px-4 pb-4 text-[#F0E6CC] md:pb-8 md:pr-14 md:pl-0 md:text-right md:self-end">
+      <div className="absolute md:bottom-6 bottom-20 md:right-2 right-auto md:left-auto left-0 grid z-10 px-4 pb-4 text-[#F0E6CC] md:pb-8 md:pr-14 md:pl-0 md:text-right md:self-end">
         <h3 className="GroteskMedium text-[4.26vw] md:text-[1.38vw] leading-[1.2] mb-1 md:mb-2 tracking-[0.02em] font-medium">
           {title}
         </h3>
