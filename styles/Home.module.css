@@ -151,6 +151,10 @@
   background-clip: content-box;
 }
 
+.CircularProgressbar{
+  width: 2rem !important;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -247,6 +251,9 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+  .CircularProgressbar{
+    width: 1rem !important;
   }
 }
 
