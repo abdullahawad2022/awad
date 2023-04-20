@@ -252,9 +252,6 @@
     );
     z-index: 1;
   }
-  .CircularProgressbar{
-    width: 1rem !important;
-  }
 }
 
 /* Tablet and Smaller Desktop */

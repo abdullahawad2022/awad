@@ -96,3 +96,12 @@ body {
 .CircularProgressbar .CircularProgressbar-trail {
   stroke: #f0e6cc8c !important;
 }
+.CircularProgressbar{
+  width: 2rem !important;
+}
+/* Mobile */
+@media (max-width: 700px) {
+.CircularProgressbar{
+  width: 1rem !important;
+}
+}
