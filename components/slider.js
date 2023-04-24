@@ -64,7 +64,7 @@ export default function Slider() {
         >
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333129/awad/loop_1_lnluts.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340977/Awad/loop_1_tkimz4.mp4"
             }
             title="Abdul Samad Al Qurashi"
             sub_title="Journey of Beauty"
@@ -73,7 +73,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333127/awad/loop_2_ghithk.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340980/Awad/loop_2_jjjouw.mp4"
             }
             title="Arab Games"
             sub_title="I am Arabic"
@@ -82,7 +82,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333121/awad/loop_3_vmtcf6.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340979/Awad/loop_3_yb2axd.mp4"
             }
             title="Sama Damas"
             sub_title="Be Brilliant"
@@ -91,7 +91,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333190/awad/loop_4_prgtgz.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340979/Awad/loop_4_txzvh0.mp4"
             }
             title="Jeep Cherokee"
             sub_title="Wildly Civilized"
@@ -100,7 +100,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333132/awad/loop_5_qhqxh1.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340988/Awad/loop_5_b1wxnf.mp4"
             }
             title="Zabeel"
             sub_title="Bedouin"
@@ -109,7 +109,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333131/awad/loop_6_spagzm.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340984/Awad/loop_6_qe9xw8.mp4"
             }
             title="Nissan Rogue"
             sub_title="World of distraction"
@@ -118,7 +118,7 @@ export default function Slider() {
           />
           <Slide
             video_url={
-              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333132/awad/loop_7_trhfwn.mp4"
+              "https://res.cloudinary.com/dpv3mzswe/video/upload/v1682340989/Awad/loop_7_pirzzz.mp4"
             }
             title="Nissan"
             sub_title="ELECTRIFY EVERY DAY"
