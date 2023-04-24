@@ -63,49 +63,63 @@ export default function Slider() {
           className="w-screen h-screen overflow-hidden keen-slider"
         >
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_1.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333129/awad/loop_1_lnluts.mp4"
+            }
             title="Abdul Samad Al Qurashi"
             sub_title="Journey of Beauty"
             title_link="/"
             id={1}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_2.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333127/awad/loop_2_ghithk.mp4"
+            }
             title="Arab Games"
             sub_title="I am Arabic"
             title_link="#"
             id={2}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_3.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333121/awad/loop_3_vmtcf6.mp4"
+            }
             title="Sama Damas"
             sub_title="Be Brilliant"
             title_link="#"
             id={3}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_4.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333190/awad/loop_4_prgtgz.mp4"
+            }
             title="Jeep Cherokee"
             sub_title="Wildly Civilized"
             title_link="#"
             id={4}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_5.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333132/awad/loop_5_qhqxh1.mp4"
+            }
             title="Zabeel"
             sub_title="Bedouin"
             title_link="#"
             id={5}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_6.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333131/awad/loop_6_spagzm.mp4"
+            }
             title="Nissan Rogue"
             sub_title="World of distraction"
             title_link="#"
             id={6}
           />
           <Slide
-            video_url={"https://d3esv1kc5gnv19.cloudfront.net/loop_7.mp4"}
+            video_url={
+              "https://res.cloudinary.com/dxnikdirh/video/upload/v1682333132/awad/loop_7_trhfwn.mp4"
+            }
             title="Nissan"
             sub_title="ELECTRIFY EVERY DAY"
             title_link="#"
