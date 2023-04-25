@@ -4,7 +4,7 @@ import React from "react";
 export default function Layout({ children }) {
   return (
     <main className="relative h-screen h-screen-ios ">
-      <div className="absolute z-20 flex justify-between w-auto h-screen overflow-hidden w-full">
+      <div className="absolute flex justify-between w-auto h-screen overflow-hidden w-full">
         <div className="relative z-10 py-6 pl-4 md:flex-shrink-0">
           <svg
             className="md:h-full h-[50vh] w-auto"
